@@ -1,0 +1,14 @@
+#footer {
+    width: 100vw;
+    height: 3rem;
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_text {
+    color: var(--light);
+    font-size: 1rem;
+}

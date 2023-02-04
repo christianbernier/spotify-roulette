@@ -1,0 +1,28 @@
+#game {
+    margin-bottom: 2rem;
+}
+
+#game_controls {
+    display: grid;
+    grid-template-areas: 
+        "button text"
+        ".      text";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#skip_button {
+    grid-area: button;
+}
+
+#game_score {
+    margin-left: 2rem;
+    grid-area: text;
+}
+
+.score_text{
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-weight: 400;
+    margin: 0;
+}
