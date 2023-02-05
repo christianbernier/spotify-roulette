@@ -21,7 +21,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "node server",
     "eject": "react-scripts eject",
     "dev": "run-p server start"
   },

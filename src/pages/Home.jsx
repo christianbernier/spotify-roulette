@@ -26,7 +26,7 @@ const Home = () =>
             <p className="welcome_title">Welcome to <span className="bold">Spotify Roulette</span>.</p>
             <p className="welcome_description">Shuffle an artist’s discography to test your knowledge of their song titles. Click the button below to log in with Spotify and begin!</p>
             <div id="login_button_container">
-                <button className="big-button" onClick={() => window.location = "http://localhost:8000/auth/login"}>
+                <button className="big-button" onClick={() => {window.location = `${process.env.REACT_APP_SERVER_URL}/auth/login`}}>
                     Get started!
                 </button>
             </div>
