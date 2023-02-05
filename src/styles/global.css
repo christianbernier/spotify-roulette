@@ -51,10 +51,10 @@ body {
 
 #body_div {
     width: 90vw;
-    min-height: 60vh;
     padding: 5vh 0 5vh 0;
     margin-left: 5vw;
     margin-right: 5vw;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -81,16 +81,16 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
-    width: fit-content;
+    width: inherit;
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
 
 .text_field {
     background-color: var(--light-gray);
-    padding: 1rem 2rem;
-    width: 30vw;
-    font-size: 1.5rem;
+    padding: 0.75rem 1rem;
+    width: calc(100% - 2rem);
+    font-size: 1.3rem;
     color: var(--dark);
     border-radius: 10px;
     font-weight: 600;
@@ -103,9 +103,8 @@ body {
 
 .big-button {
     background-color: var(--accent);
-    padding: 1rem 2rem;
-    min-width: 10vw;
-    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
     color: var(--light);
     border-radius: 10px;
     font-weight: 600;
@@ -167,5 +166,21 @@ body {
         padding: 10vh 0 10vh 0;
         margin-left: 20vw;
         margin-right: 20vw;
+    }
+
+    .big-button {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        min-width: 10vw;
+    }
+
+    .text_field_and_button {
+        width: fit-content;
+    }
+
+    .text_field {
+        padding: 1rem 2rem;
+        width: 30vw;
+        font-size: 1.5rem;
     }
 }

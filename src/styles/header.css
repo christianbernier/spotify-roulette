@@ -10,5 +10,13 @@
 }
 
 #header_logo {
-    height: 50% !important;
+    height: unset;
+    width: 80vw;
+}
+
+@media only screen and (min-width: 900px) {
+    #header_logo {
+        width: unset;
+        height: 50% !important;
+    }
 }

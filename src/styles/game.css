@@ -5,10 +5,8 @@
 #game_controls {
     display: grid;
     grid-template-areas: 
-        "button text"
-        ".      text";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
+        "button ."
+        "text   text";
 }
 
 #skip_button {
@@ -16,8 +14,8 @@
 }
 
 #game_score {
-    margin-left: 2rem;
     grid-area: text;
+    margin-top: 2rem;
 }
 
 .score_text{
@@ -25,4 +23,20 @@
     color: var(--dark);
     font-weight: 400;
     margin: 0;
+}
+
+@media only screen and (min-width: 900px) {
+    #game_controls {
+        display: grid;
+        grid-template-areas: 
+            "button text"
+            ".      text";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #game_score {
+        margin-left: 2rem;
+        margin-top: 0;
+    }
 }

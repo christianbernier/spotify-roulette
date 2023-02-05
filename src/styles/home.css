@@ -1,3 +1,7 @@
+:root {
+    overflow-x: hidden;
+}
+
 .body {
     width: 100vw;
     min-height: 100vh;
@@ -12,7 +16,8 @@
 }
 
 #header_art {
-    width: 100vw;
+    object-fit: cover;
+    height: 40vh;
 }
 
 #header_text_container {
@@ -28,16 +33,18 @@
 }
 
 #header_logo_intro {
-    height: 5rem;
+    height: unset;
+    width: 90%;
     margin-bottom: 1rem;
 }
 
 .header_title {
     color: var(--light);
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin: 0.4rem 0;
     text-shadow: 2px 2px 4px var(--dark);
+    text-align: center;
 }
 
 .bold {
@@ -105,5 +112,19 @@
     #welcome_body {
         width: 60vw;
         padding-bottom: 5rem;
+    }
+
+    #header_art {
+        width: 100%;
+    }
+
+    .header_title {
+        font-size: 2.5rem;
+    }
+
+    #header_logo_intro {
+        height: 5rem;
+        width: unset;
+        margin-bottom: 1rem;
     }
 }
